@@ -1,5 +1,3 @@
-//import { renderProductSelected } from './components/comprar.js';
-
 const heroContent = document.querySelector(".hero-container");
 
 heroContent.innerHTML = `
@@ -55,7 +53,7 @@ heroContent.innerHTML = `
             </span>
             <br>
             <h1 style="color: #fff; font-size: 3rem;">Em um único <br> lugar</h1>
-            <button data-action="comprar" onclick="renderProductSelected(this)">Compra já</button>
+            <button data-action="comprar">Compra já</button>
         </div>
         <div class="hero-image">
             <img src="public/images/pngwing.com.png" alt="Imagem do Hero">
