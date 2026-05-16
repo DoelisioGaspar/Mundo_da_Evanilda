@@ -1,9 +1,8 @@
 /* Puxar um único produto específico para compra*/
-import { produto } from './produtos.js';
 
 export default function renderProductSelected(data) {
     const urlParams = new URLSearchParams(window.location.search);
-    const productId = urlParams.get('id');
+    //const productId = urlParams.get('id');
     const productName = urlParams.get('name');
     console.log(productId, productName);
     const selectedProduct = data.find(p =>  p.nome === productName);
