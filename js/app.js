@@ -4,7 +4,7 @@ const areaProduto = document.querySelector('.area__produtos')
 
 const renderProdutos = (lista) => {
     areaProduto.innerHTML = lista.map(p => `
-        <div class="produto slide-in" data-id="${p.id}" data-name="${p.nome}">
+        <div class="produto slide-in" data-id="${p.id}" data-name="${p.nome.split(' ').join('-')}">
             
             <div class="produto__imagem">
                 <img src="${p.imagem}" alt="${p.nome}">
