@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/animation.css">
+    <link rel="stylesheet" href="src/responsive.css">
+    <title>MundoDaEvanilda</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="#">Mais procurados</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li class="dropdown-btn">
+                    <a href="#">Formação <i class="fas fa-angle-down"></i></a>
+                    <div class="dropdown">
+                        <a href="#">Curso de importação <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="icons">
+                <div class="input-field">
+
+                    <input type="text" placeholder="Pesquisar produtos...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <i class="fi fi-tr-shopping-cart" style="color: #000;"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="hero">
+
+        <div class="hero-container" style="position: relative;">
+            <!-- Content in JS -->
+        </div>
+
+    </div>
+
+    <section class="area--categorias">
+
+        <h1>Explore por Categoria</h1>
+
+        <ul class="categories">
+            <li><i class="fa fa-laptop"></i><a href="#"></a>Eletrónicos</li>
+            <li><i class="fa fa-tshirt"></i><a href="#"></a>Moda</li>
+            <li><i class="fa fa-home"></i><a href="#"></a>Casa</li>
+            <li><i class="fa fa-spa"></i><a href="#"></a>Beleza</li>
+            <li><i class="fa fa-futbol-o"></i><a href="#"></a>Esporte</li>
+            <li><i class="fa fa-graduation-cap"></i><a href="#"></a>Escola</li>
+            <li><i class="fa fa-music"></i><a href="#"></a>Música</li>
+            <li><i class="fa fa-gamepad"></i><a href="#"></a>Hobbies</li>
+        </ul>
+    </section>
+
+    <section class="area--destaques">
+        <h1>Destaques da Semana</h1>
+        <p>Produtos selecionados a dedo para você aproveitar as melhores ofertas</p>
+        <div class="destaques">
+            <div class="destaque-item">
+                <div class="bx-img">
+
+                    <img src="public/images/pngwing.com (4).png" alt="">
+                </div>
+                <h3>Smartphone XYZ</h3>
+                <p>O mais recente lançamento.</p>
+            </div>
+            <div class="destaque-item">
+                <div class="bx-img">
+
+                    <img src="public/images/headphones-bluetooth.png" alt="">
+                </div>
+                <h3>Fone de Ouvido ABC</h3>
+                <p>Experiência sonora imersiva.</p>
+            </div>
+            <div class="destaque-item">
+                <div class="bx-img">
+
+                    <img src="public/images/Smart watch.png" alt="">
+                </div>
+                <h3>Relógio Inteligente DEF</h3>
+                <p>Monitore sua saúde e receba notificações.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container--produtos">
+
+        <aside class="area--categoria">
+            <div class="categoria">
+                <div class="categoria--titulos">
+                    <p>Categorias</p>
+                    <span class="fa fa-minus" id="hideButton"></span>
+                </div>
+                <div class="select-input">
+                    <input id="categoriaa" type="radio" name="categoria" value="Todos" checked="true">
+                    <label for="Eletronicos">Todos</label> <br>
+                    <input id="categoriaa" type="radio" name="categoria" value="Eletrônicos">
+                    <label for="Eletronicos">Electronicos</label> <br>
+                    <input id="categoriaa" type="radio" name="categoria" value="Joias">
+                    <label for="joias">Jóias</label> <br>
+                    <input id="categoriaa" type="radio" name="categoria" value="Moda">
+                    <label for="moda">Moda</label> <br>
+                    <input id="categoriaa" type="radio" name="categoria" value="Mobília">
+                    <label for="mobilia">Mobílias</label>
+                </div>
+            </div>
+
+            <div class="categoria">
+                <div class="categoria--titulos">
+                    <p>Gênero</p>
+                    <span class="fa fa-minus" id="hideButton"></span>
+                </div>
+                <div class="select-input">
+                    <input type="radio" name="sexo" checked="true">
+                    <label for="Eletronicos">Todos</label> <br>
+                    <input type="radio" name="sexo">
+                    <label for="Eletronicos">Masculino</label> <br>
+                    <input type="radio" name="sexo">
+                    <label for="joias">Femenino</label> <br>
+                </div>
+            </div>
+
+            <div class="categoria">
+                <div class="categoria--titulos">
+                    <p>Cor</p>
+                    <span class="fa fa-minus" id="hideButton"></span>
+                </div>
+                <div class="select-input">
+                    <div class="set-color" id="set-color" style="background: red;"></div>
+                    <div class="set-color" id="set-color" style="background: var(--blue);"></div>
+                    <div class="set-color" id="set-color" style="background: var(--blue-dark);"></div>
+                    <div class="set-color" id="set-color" style="background: green;"></div>
+                    <div class="set-color" id="set-color" style="background: pink;"></div>
+                    <div class="set-color" id="set-color" style="background: yellow;"></div>
+                    <div class="set-color" id="set-color" style="background: grey;"></div>
+                </div>
+
+            </div>
+
+            <div class="categoria">
+                <div class="categoria--titulos">
+                    <p>Preço</p>
+                    <span class="fa fa-minus" id="hideButton"></span>
+                </div>
+                <div class="select-input">
+                    <p class="price--range">1$-50$</p>
+                    <p class="price--range">20$-100$</p>
+                    <p class="price--range">100$</p>
+                </div>
+            </div>
+        </aside>
+
+        <div class="area--grid--produtos">
+            <h1>Nossos Produtos</h1>
+            <p>Seleção especial dos melhores produtos importados com preços imbatíveis</p>
+
+
+            <div class="area__produtos">
+
+                <!--Os produtos apareceram aqui-->
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="curso--de--importacao">
+        <div class="curso--de--importacao--container">
+            <div class="curso--de--importacao--content">
+                <h1>Aprenda a Importar Produtos</h1>
+                <p>Peça já a sua consulta gratuita e descubra como importar produtos do exterior de forma simples e eficiente.</p>
+                <div class="beneficios">
+                    <div class="beneficio">
+                        <i class="fa-solid fa-globe"></i>
+                        <h3>Acesso a Mercados Globais</h3>
+                        <p>Aprenda a navegar pelos mercados internacionais e descubra como encontrar os melhores fornecedores e produtos para importar.</p>
+                    </div>
+                    <div class="beneficio">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <h3>Economia Significativa</h3>
+                        <p>Descubra como importar produtos do exterior pode ser mais econômico do que comprar localmente, permitindo que você economize dinheiro e aumente seus lucros.</p>
+                    </div>
+                    <div class="beneficio">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h3>Vantagem Competitiva</h3>
+                        <p>Aprenda a importar produtos exclusivos e de alta qualidade que não estão disponíveis localmente, dando a você uma vantagem competitiva no mercado.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="newsletter" id="contact">
+        <div class="newsletter-box">
+            <h3>📬 Fique por Dentro das Novidades</h3>
+            <p>Receba ofertas exclusivas e novidades direto no seu e-mail</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Seu melhor e-mail..." required>
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-icon">🌍</span>
+                    <span>MundoDaEvalina</span>
+                </div>
+                <p>Sua loja de produtos importados com qualidade garantida e os melhores preços do mercado.</p>
+                <div class="footer-social">
+                    <a href="#">📘</a>
+                    <a href="#">📸</a>
+                    <a href="#">🐦</a>
+                    <a href="#">▶️</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Loja</h4>
+                <ul>
+                    <li><a href="#">Eletrônicos</a></li>
+                    <li><a href="#">Moda</a></li>
+                    <li><a href="#">Beleza</a></li>
+                    <li><a href="#">Casa & Jardim</a></li>
+                    <li><a href="#">Gaming</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Parcerias</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Suporte</h4>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <!--<li><a href="#">Rastrear Pedido</a></li>-->
+                    <!--<li><a href="#">Trocas e Devoluções</a></li>-->
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 MundodaEvanilda. Todos os direitos reservados. Feito por Webcompany.</p>
+        </div>
+    </footer>
+
+</body>
+<script type="module" src="js/main.js"></script>
+<script type="module" src="components/slide.js"></script>
+
+</html>

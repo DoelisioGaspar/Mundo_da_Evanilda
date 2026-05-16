@@ -1,0 +1,104 @@
+[
+    {
+        "id": 1,
+        "nome": "Laptop Samsung Book",
+        "preco": 10000,
+        "descricao": "Processador: Intel Core i5-1135G7",
+        "imagem": "public/images/pngwing.com.png",
+        "categoria": "Eletrônicos",
+        "keyword": [""],
+        "status": true
+    },
+    {
+        "id": 2,
+        "nome": "Teclado Gamer RGB",
+        "preco": 55000,
+        "descricao": "Teclado mecânico com iluminação RGB personalizável",
+        "imagem": "public/images/Teclado do gamer.jpg",
+        "categoria": "Eletrônicos",
+        "keyword": ["", "gamer", "rgb"],
+        "status": true
+    },
+    {
+        "id": 3,
+        "nome": "Pulseira Clássica",
+        "preco": 4500,
+        "descricao": "Pulseira de couro com design clássico e elegante",
+        "imagem": "public/images/Classic bracelet.jpg",
+        "categoria": "Moda",
+        "keyword": [""],
+        "status": true
+    },
+    {
+        "id": 4,
+        "nome": "Adidas Grand Court Base 2.0",
+        "preco": 25000,
+        "descricao": "Tênis Adidas Grand Court Base 2.0, perfeito para quem busca conforto e estilo em um só produto.",
+        "imagem": "public/images/Tênis Adidas Masculino Grand Court Base 2_0.png",
+        "categoria": "Decoração",
+        "keyword": "Casa",
+        "status": true
+    },
+    {
+        "id": 5,
+        "nome": "Chair",
+        "preco": 75000,
+        "descricao": "Cadeira de design moderno, perfeita para complementar a decoração da sua casa ou escritório.",
+        "imagem": "public/images/chair.png",
+        "categoria": "Mobília",
+        "keyword": ["Mobília"],
+        "status": true
+    },
+    {
+        "id": 6,
+        "nome": "Camiseta preta",
+        "preco": 5000,
+        "descricao": "Camiseta de algodão confortável, perfeita para uso diário.",
+        "imagem": "public/images/tshirt-black.jpg",
+        "categoria": "Beleza",
+        "keyword": ["Beleza", "maquiagem", "pincel"],
+        "status": true
+    },
+    {
+        "id": 7,
+        "nome": "Bermuda preta",
+        "preco": 7200,
+        "descricao": "Bermuda de algodão confortável, perfeita para uso diário.",
+        "imagem": "public/images/pants-black.png",
+        "categoria": "Moda",
+        "keyword": [""],
+        "status": true,
+        "liked": false
+    },
+    {
+        "id": 8,
+        "nome": "Headphones Bluetooth",
+        "preco": 22000,
+        "descricao": "Headphones Bluetooth com qualidade de som excepcional e design moderno, perfeito para ouvir música em qualquer lugar.",
+        "imagem": "public/images/headphones-bluetooth.png",
+        "categoria": "Eletrônicos",
+        "status": false,
+        "liked": false
+    },
+    {
+        "id": 9,
+        "nome": "Capa de S26",
+        "preco": 10500,
+        "descricao": "Capa para smartphone modelo S26, feita de material de alta qualidade. Protege seu dispositivo contra quedas e arranhões, além de oferecer um design elegante e moderno.",
+        "imagem": "public/images/capa de S26.jpg",
+        "categoria": "Moda",
+        "keyword": [""],
+        "status": true,
+        "liked": false
+    },
+    {
+        "id": 10,
+        "nome": "Bola Adidas WC 26",
+        "preco": 32000,
+        "descricao": "Bola de futebol Adidas World Cup 26, perfeita para jogos e treinos. Com design inspirado na Copa do Mundo, oferece excelente desempenho e durabilidade em campo.",
+        "imagem": "public/images/Adidas FIFA WORLD Cup 26.jpg",
+        "categoria": "Esporte",
+        "status": false,
+        "liked": false
+    }
+]
