@@ -24,7 +24,7 @@ heroContent.innerHTML = `
             <button data-action="comprar">Compra já</button>
         </div>
         <div class="hero-image">
-            <img src="public/images/headphones-bluetooth.png" alt="Imagem do Hero">
+            <img src="assets/images/headphones-bluetooth.png" alt="Imagem do Hero">
         </div>
     </div>
 
@@ -40,7 +40,7 @@ heroContent.innerHTML = `
             <button data-action="comprar">Compra já</button>
         </div>
         <div class="hero-image">
-            <img src="public/images/pngwing.com copy.png" alt="Imagem do Hero">
+            <img src="assets/images/pngwing.com copy.png" alt="Imagem do Hero">
         </div>
     </div>
     
@@ -56,7 +56,7 @@ heroContent.innerHTML = `
             <button data-action="comprar">Compra já</button>
         </div>
         <div class="hero-image">
-            <img src="public/images/pngwing.com.png" alt="Imagem do Hero">
+            <img src="assets/images/pngwing.com.png" alt="Imagem do Hero">
         </div>
     </div>
     `;
