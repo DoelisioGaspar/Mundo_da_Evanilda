@@ -16,7 +16,7 @@ heroContent.innerHTML = `
 
         <div class="text-hero">
             <span style="color: #e4e44a; 
-                    font-size: 1.3rem; text-transform: uppercase;
+                     text-transform: uppercase;
                     font-weight: 600; letter-spacing: 2px;">Produtos de alta qualidade
             </span>
             <br>

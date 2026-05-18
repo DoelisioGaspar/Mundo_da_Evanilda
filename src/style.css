@@ -185,6 +185,10 @@ header .search-bar button i {
   gap: 20px; */
 }
 
+.text-hero {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
 .hero .hero-container .text-hero button {
   margin-top: 20px;
   padding: 12px 28px;
@@ -307,8 +311,8 @@ header .search-bar button i {
 /* O Segredo do Glassmorphism */
 .glass-card {
     background: rgba(255, 255, 255, 0.04); /* Opacidade bem baixa no fundo */
-    backdrop-filter: blur(16px); /* O efeito de desfoque do vidro */
     -webkit-backdrop-filter: blur(16px); /* Suporte para Safari */
+    backdrop-filter: blur(16px); /* O efeito de desfoque do vidro */
     
     /* Borda cirúrgica: simula o reflexo da quina do vidro */
     border: 1px solid rgba(255, 255, 255, 0.12); 
