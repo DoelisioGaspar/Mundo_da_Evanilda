@@ -29,6 +29,8 @@ body {
   font-family: "poppins", sans-serif;
   background: linear-gradient(45deg, #FFFFF0, #F5F5F5) fixed;
   color: #000;
+
+  position: relative;
 }
 
 header {
@@ -398,6 +400,16 @@ header .search-bar button i {
 .container--produtos {
   display: flex;
   margin: 2rem 0;
+}
+
+.container--produtos #filterButton {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
 }
 
 .container--produtos aside {

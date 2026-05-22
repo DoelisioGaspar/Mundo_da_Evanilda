@@ -37,8 +37,36 @@
   }
 
   aside {
-    display: none;
+    /* display: none; */
+    background: rgba(0, 0, 0, 0.801);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .categoria {
+      width: 100%;
+    }
   }
+  .container--produtos aside 
+.categoria 
+.categoria--titulos {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: #fff;
+    background: transparent;
+  }
+
+  .container--produtos #filterButton {
+    display: block;
+  }
+  
   .area__produtos {
     width: 100%;
     display: flex;

@@ -128,3 +128,11 @@ areaProduto.addEventListener('click', (event) => {
         window.location.href = `/produto?name=${produtoElement.dataset.name}`;
     }
 });
+
+document.addEventListener('click', (event) => {
+    if (event.target.id === 'filterButton') {
+        const filterButton = document.getElementById('filterButton');
+        const sideBar = document.querySelector('.sideBar');
+        sideBar.classList.toggle('slide');
+    }
+});
