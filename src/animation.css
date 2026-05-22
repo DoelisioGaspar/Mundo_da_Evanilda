@@ -64,7 +64,7 @@
 
 /* zoom In */
 .zoom-in {
-    animation: zoomIn 1s ease-in-out;
+    animation: zoomIn .3s ease-in-out;
 }
 
 @keyframes zoomIn {
