@@ -491,11 +491,13 @@ header .search-bar button i {
 }
 
 .area--grid--produtos > h1 {
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
+  margin-left: 4px; 
 }
 
 .area--grid--produtos > p {
-  margin-bottom: 4rem;  
+  margin-bottom: 4rem;
+  margin-left: 4px;   
 }
 
 .produto {

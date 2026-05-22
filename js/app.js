@@ -90,6 +90,21 @@ function filtrarProdutos(data, categoria) {
 
             </div>
             `
+        } else {
+            // Tela de produto não encontrado (UI page not found)
+            areaProduto.innerHTML = `
+            <div class="item--not--found slide-in">
+                <div class="produto__imagem" style="background: transparent;">
+                    <img src="assets/images/undraw_empty_4zx0.svg" alt="Produto não encontrado">
+                    
+                </div>
+                <div class="description">
+                    <h2>Produto não encontrado</h2>
+                    <p>Desculpe, o produto que você está procurando não está disponível.</p>
+                </div>
+                <button>Pesquisar novamente</button>
+            </div>
+            `
         }
 
     }
