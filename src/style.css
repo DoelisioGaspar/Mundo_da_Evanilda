@@ -563,11 +563,10 @@ header .search-bar button i {
 .curso--de--importacao {
   height: 70vh;
   max-width: 100%;
-  min-width: 370px;
+  min-width: 320px;
   margin: var(--margin-section) 0;
   position: relative;
   overflow: hidden;
-
 }
 
 .curso--de--importacao .curso--de--importacao--container {
@@ -639,6 +638,7 @@ header .search-bar button i {
 
 .newsletter-box {
   max-width: 600px;
+  min-width: 320px;
   margin: 0 auto;
   background: var(--white);
   border-radius: var(--radius);

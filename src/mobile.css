@@ -1,7 +1,11 @@
 /* Versão mobile */
 
-@media (max-width: 390px) {
+@media (max-width: 440px) {
+  body {
+    background: #000;
+  }
   header {
+    width: 100%;
     background-color: rgb(184, 221, 115);
         .nav-links {
             display: none;
@@ -41,13 +45,27 @@
     width: 100%;
     display: flex;
     padding: .2rem;
-    gap: .4rem;
+    gap: 1.4rem .4rem;
     flex-wrap: wrap;
     .produto {
-        height: 250px;
-        width: 180px;
+        height: 220px;
+        flex-basis: calc(50% - 0.4rem);
+        h4 {
+            font-size: 12px;
+        }
     }
   }
 
+  .newsletter-box {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  footer {
+    padding: 0.5rem;
+    .footer-grid {
+      grid-template-columns: auto auto;
+    }
+  }
   
 }
