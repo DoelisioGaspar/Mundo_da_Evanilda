@@ -66,44 +66,40 @@ hideButton.forEach((bt, indice) => {
 /* Filtrar produtos por categoria */
 
 function filtrarProdutos(data, categoria) {
-  areaProduto.innerHTML = "";
-  for (let i = 0; i < data.length; i++) {
-    if (data[i].categoria === categoria || data[i].keyword === categoria) {
-      areaProduto.innerHTML += `
-            <div class="produto slide-in" data-id="${data[i].id}" data-name="${data[i].nome}">
-            
-                <div class="produto__imagem">
-                    <img src="${data[i].imagem}" alt="${data[i].nome}">
-                </div>
+  const produtosFiltrados = data.filter(
+    (item) => item.categoria === categoria || item.keyword === categoria,
+  );
 
-                <div class="product--info">
-                    <div class="">
-                        <h4>${data[i].nome}</h4>
-                        <span class="pricetag">${data[i].preco.toFixed(2)}Kz</span>
-                    </div>
-                
-                    <div class="lovebox">
-                        <span class="fas fa-heart like ${data[i].liked ? "liked" : ""}"></span>
-                    </div>
-                </div>
-
-            </div>`;
-      return;
-    }
+  if (produtosFiltrados.length === 0) {
+    areaProduto.innerHTML = `
+      <div class="produto-vazio">
+        <p>Nenhum produto encontrado para a categoria "${categoria}".</p>
+      </div>
+    `;
+    return;
   }
-  // Tela de produto não encontrado (UI page not found)
-  areaProduto.innerHTML = `
-            <div class="item--not--found slide-in">
-                <div class="produto__imagem" style="background: transparent;">
-                    <img src="assets/images/undraw_empty_4zx0.svg" alt="Produto não encontrado">
-                    
-                </div>
-                <div class="description">
-                    <h2>Produto não encontrado</h2>
-                    <p>Desculpe, o produto que você está procurando não está disponível.</p>
-                </div>
-                <button>Pesquisar novamente</button>
-            </div>`;
+
+  areaProduto.innerHTML = produtosFiltrados
+    .map(
+      (p) => `
+      <div class="produto slide-in" data-id="${p.id}" data-name="${p.nome}">
+        <div class="produto__imagem">
+          <img src="${p.imagem}" alt="${p.nome}">
+        </div>
+
+        <div class="product--info">
+          <div class="">
+            <h4>${p.nome}</h4>
+            <span class="pricetag">${p.preco.toFixed(2)}Kz</span>
+          </div>
+
+          <div class="lovebox">
+            <span class="fas fa-heart like ${p.liked ? "liked" : ""}"></span>
+          </div>
+        </div>
+      </div>`,
+    )
+    .join("");
 
   const caixaCurti = document.querySelectorAll(".lovebox");
   caixaCurti.forEach(function (box) {
@@ -135,6 +131,9 @@ areaProduto.addEventListener("click", (event) => {
   if (produtoElement) {
     // Handle product click event
     window.location.href = `/produto?name=${produtoElement.dataset.name}`;
+  }
+  else if (event.target.classList.contains("fa-cart-shopping")) {
+    const produtoElement = event.target.closest(".produto");
   }
 });
 

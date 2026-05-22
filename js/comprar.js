@@ -29,7 +29,6 @@ export default function renderProductSelected(data) {
         const btnCheck = document.querySelector('#btn-check');
         console.log(btnCheck);
         btnCheck.addEventListener('click', () => {
-            console.log('Botão de compra clicado');
             const popup = document.querySelector('.popup');
             document.querySelector('.popup-content').classList.toggle('zoom-in', 'zoom-out');
             popup.style.display = 'flex';    
@@ -40,8 +39,6 @@ export default function renderProductSelected(data) {
             popup.style.display = popup.style.display === 'flex' ? 'none' : 'flex';
         });
 
-    } else {
-        console.log("Produto não encontrado.");
     }
 }
 
