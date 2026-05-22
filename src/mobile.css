@@ -50,6 +50,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: left 0.3s ease-in-out;
     .categoria {
       width: 100%;
     }
@@ -65,6 +66,9 @@
 
   .container--produtos #filterButton {
     display: block;
+    top: 100px;
+    right: 20px;
+    left: none;
   }
   
   .area__produtos {

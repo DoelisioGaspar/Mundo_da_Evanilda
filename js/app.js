@@ -133,6 +133,13 @@ document.addEventListener('click', (event) => {
     if (event.target.id === 'filterButton') {
         const filterButton = document.getElementById('filterButton');
         const sideBar = document.querySelector('.sideBar');
-        sideBar.classList.toggle('slide');
-    }
+        sideBar.style.left= sideBar.style.left === '0px' ? '-100%' : '0px';
+        console.log('clicou');
+        //Se o evento for fora, fecha a barra lateral
+        document.addEventListener('click', (event) => {
+            if (!sideBar.contains(event.target) && event.target.id !== 'filterButton') {
+                sideBar.style.left = '-100%';
+            }
+        });
+    } 
 });
