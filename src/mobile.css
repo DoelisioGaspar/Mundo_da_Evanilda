@@ -56,9 +56,53 @@
     }
   }
 
+  .curso--de--importacao 
+  .curso--de--importacao--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .curso--de--importacao--image {
+        width: 100%;
+        height: auto;
+    }
+    .curso--de--importacao--info {
+        text-align: center;
+        h2 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        button {
+            padding: 0.5rem 1.3rem;
+            border: none;
+            border-radius: 2rem;
+            background-color: #ff0000;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+  }
+
   .newsletter-box {
     width: 100%;
     padding: 1rem;
+    .newsletter-form input {
+        width: 100%;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+    }
+    .newsletter-form button {
+        padding: 0.5rem 1.3rem;
+        border: none;
+        border-radius: 2rem;
+        background-color: #ff0000;
+        color: #fff;
+        cursor: pointer;
+    }
   }
 
   footer {
