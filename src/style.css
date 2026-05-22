@@ -562,6 +562,8 @@ header .search-bar button i {
 
 .curso--de--importacao {
   height: 70vh;
+  max-width: 100%;
+  min-width: 370px;
   margin: var(--margin-section) 0;
   position: relative;
   overflow: hidden;
