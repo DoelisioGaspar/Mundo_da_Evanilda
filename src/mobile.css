@@ -1,9 +1,7 @@
 /* Versão mobile */
 
 @media (max-width: 440px) {
-  body {
-    background: #000;
-  }
+  
   header {
     width: 100%;
     background-color: rgb(56, 71, 90);

@@ -136,66 +136,73 @@
     <section class="container--produtos" style="position: relative;">
         
         <aside class="area--categoria sideBar">
+            <div class="sidebar-header">
+                <h2>Filtros inteligentes</h2>
+                <p>Encontre o produto ideal de forma rápida e visual.</p>
+            </div>
+
             <div class="categoria">
                 <div class="categoria--titulos">
-                    <p>Categorias</p>
-                    <span class="fa fa-minus" id="hideButton"></span>
+                    <p>Secção</p>
+                    <span class="fa fa-minus" id="hideButtonCategorias"></span>
                 </div>
-                <div class="select-input">
-                    <input id="categoriaa" type="radio" name="categoria" value="Todos" checked="true">
-                    <label for="Eletronicos">Todos</label> <br>
-                    <input id="categoriaa" type="radio" name="categoria" value="Eletrônicos">
-                    <label for="Eletronicos">Electronicos</label> <br>
-                    <input id="categoriaa" type="radio" name="categoria" value="Joias">
-                    <label for="joias">Jóias</label> <br>
-                    <input id="categoriaa" type="radio" name="categoria" value="Moda">
-                    <label for="moda">Moda</label> <br>
-                    <input id="categoriaa" type="radio" name="categoria" value="Mobília">
-                    <label for="mobilia">Mobílias</label>
+                <div class="select-input" id="filterSection">
+                    <label><input id="categoria-todos" type="radio" name="categoria" value="Todos" checked> Todos</label>
+                    <label><input id="categoria-eletronicos" type="radio" name="categoria" value="Eletrônicos"> Eletrônicos</label>
+                    <label><input id="categoria-joias" type="radio" name="categoria" value="Joias"> Jóias</label>
+                    <label><input id="categoria-moda" type="radio" name="categoria" value="Moda"> Moda</label>
+                    <label><input id="categoria-mobilia" type="radio" name="categoria" value="Mobília"> Mobílias</label>
                 </div>
             </div>
 
             <div class="categoria">
                 <div class="categoria--titulos">
                     <p>Gênero</p>
-                    <span class="fa fa-minus" id="hideButton"></span>
+                    <span class="fa fa-minus" id="hideButtonGenero"></span>
                 </div>
                 <div class="select-input">
-                    <input type="radio" name="sexo" checked="true">
-                    <label for="Eletronicos">Todos</label> <br>
-                    <input type="radio" name="sexo">
-                    <label for="Eletronicos">Masculino</label> <br>
-                    <input type="radio" name="sexo">
-                    <label for="joias">Femenino</label> <br>
+                    <label><input id="sexo-todos" type="radio" name="sexo" checked> Todos</label>
+                    <label><input id="sexo-masculino" type="radio" name="sexo" value="Masculino"> Masculino</label>
+                    <label><input id="sexo-feminino" type="radio" name="sexo" value="Feminino"> Feminino</label>
                 </div>
             </div>
 
             <div class="categoria">
                 <div class="categoria--titulos">
                     <p>Cor</p>
-                    <span class="fa fa-minus" id="hideButton"></span>
+                    <span class="fa fa-minus" id="hideButtonCor"></span>
                 </div>
-                <div class="select-input">
-                    <div class="set-color" id="set-color" style="background: red;"></div>
-                    <div class="set-color" id="set-color" style="background: var(--blue);"></div>
-                    <div class="set-color" id="set-color" style="background: var(--blue-dark);"></div>
-                    <div class="set-color" id="set-color" style="background: green;"></div>
-                    <div class="set-color" id="set-color" style="background: pink;"></div>
-                    <div class="set-color" id="set-color" style="background: yellow;"></div>
-                    <div class="set-color" id="set-color" style="background: grey;"></div>
+                <div class="select-input" id="color-grid">
+                    <label class="color-swatch" style="background: red;"><input type="radio" name="cor" value="Vermelho"></label>
+                    <label class="color-swatch" style="background: var(--blue);"><input type="radio" name="cor" value="Azul"></label>
+                    <label class="color-swatch" style="background: var(--blue-dark);"><input type="radio" name="cor" value="Azul Escuro"></label>
+                    <label class="color-swatch" style="background: green;"><input type="radio" name="cor" value="Verde"></label>
+                    <label class="color-swatch" style="background: pink;"><input type="radio" name="cor" value="Rosa"></label>
+                    <label class="color-swatch" style="background: yellow;"><input type="radio" name="cor" value="Amarelo"></label>
+                    <label class="color-swatch" style="background: grey;"><input type="radio" name="cor" value="Cinza"></label>
                 </div>
-
             </div>
 
             <div class="categoria">
                 <div class="categoria--titulos">
                     <p>Preço</p>
-                    <span class="fa fa-minus" id="hideButton"></span>
+                    <span class="fa fa-minus" id="hideButtonPreco"></span>
+                </div>
+                <div class="select-input" id="price-grid">
+                    <button class="price--range" type="button">R$ 0-99</button>
+                    <button class="price--range" type="button">R$ 100-249</button>
+                    <button class="price--range" type="button">R$ 250+</button>
+                </div>
+            </div>
+
+            <div class="categoria">
+                <div class="categoria--titulos">
+                    <p>Disponibilidade</p>
+                    <span class="fa fa-minus" id="hideButtonDisponibilidade"></span>
                 </div>
                 <div class="select-input">
-                    <p class="price--range">1$-50$</p>
-                    <p class="price--range">20$-100$</p>
-                    <p class="price--range">100$</p>
+                    <label><input id="frete-rapido" type="checkbox" name="disponibilidade" value="Frete rápido"> Frete rápido</label>
+                    <label><input id="promocoes" type="checkbox" name="disponibilidade" value="Promoções"> Promoções</label>
                 </div>
             </div>
         </aside>

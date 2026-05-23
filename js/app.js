@@ -47,10 +47,19 @@ produto.then((data) => {
   renderProdutos(data);
 });
 
-const hideButton = document.querySelectorAll("#hideButton");
+const hideButton = document.querySelectorAll(".categoria--titulos .fa-minus");
 hideButton.forEach((bt, indice) => {
   bt.addEventListener("click", () => {
     let hideInputsRadio = document.querySelectorAll(".select-input")[indice];
+    
+    if (indice === 2) {
+      let colorGrid = document.querySelector('#color-grid')
+      colorGrid.style.display = colorGrid.style.display === "none" ? "grid" : "none";
+    } else if (indice === 3) {
+      let priceGrid = document.querySelector('#price-grid')
+      priceGrid.style.display = priceGrid.style.display === "none" ? "grid" : "none";
+    }
+
     hideInputsRadio.classList.toggle("hide");
 
     if (bt.classList == "fa fa-minus") {
@@ -61,7 +70,9 @@ hideButton.forEach((bt, indice) => {
       bt.classList.add("fa-minus");
     }
   });
-});
+}); 
+
+
 
 /* Filtrar produtos por categoria */
 
@@ -116,7 +127,7 @@ function filtrarProdutos(data, categoria) {
   });
 }
 
-const radio = document.querySelectorAll("#categoriaa");
+const radio = document.querySelectorAll("#filterSection input[type='radio']");
 radio.forEach((r) => {
   r.addEventListener("click", () => {
     if (r.value == "Todos") {
@@ -127,6 +138,7 @@ radio.forEach((r) => {
       //Renderizar apenas os produtos com a categoria selecionada
       produto.then((data) => {
         filtrarProdutos(data, r.value);
+        console.log(r.value);
       });
     }
   });
