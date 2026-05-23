@@ -73,6 +73,12 @@ function filtrarProdutos(data, categoria) {
   if (produtosFiltrados.length === 0) {
     areaProduto.innerHTML = `
       <div class="produto-vazio">
+        <div class="imagem-vazia" 
+          style="width: 300px; 
+          height: 300px; 
+          margin-bottom: 20px;">
+          <img src="assets/images/undraw_empty_4zx0.svg" alt="Nenhum produto encontrado" style="width: 100%; height: 100%;">
+        </div>
         <p>Nenhum produto encontrado para a categoria "${categoria}".</p>
       </div>
     `;
@@ -142,7 +148,6 @@ document.addEventListener("click", (event) => {
     const filterButton = document.getElementById("filterButton");
     const sideBar = document.querySelector(".sideBar");
     sideBar.style.left = sideBar.style.left === "0px" ? "-100%" : "0px";
-    console.log("clicou");
     //Se o evento for fora, fecha a barra lateral
     document.addEventListener("click", (event) => {
       if (
