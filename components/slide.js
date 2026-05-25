@@ -7,7 +7,7 @@ heroContent.innerHTML = `
     transform: translateX(-50%); display: flex; gap: 10px;
     z-index: 10;">
                 <input type="radio" name="selectSlide" id="" checked>
-                <input type="radio" name="selectSlide" id="" >
+                <input type="radio" name="selectSlide" id="" style="accent-color: var(--blue); background: #1234dd;">
                 <input type="radio" name="selectSlide" id="">
                 <input type="radio" name="selectSlide" id="">
     </div>
@@ -24,7 +24,7 @@ heroContent.innerHTML = `
             <button data-action="comprar">Compra já</button>
         </div>
         <div class="hero-image">
-            <img src="assets/images/headphones-bluetooth.png" alt="Imagem do Hero">
+            <img src="assets/images/headphones-bluetooth.png" alt="Imagem do Hero" loading="lazy">
         </div>
     </div>
 
@@ -40,7 +40,7 @@ heroContent.innerHTML = `
             <button data-action="comprar">Compra já</button>
         </div>
         <div class="hero-image">
-            <img src="assets/images/pngwing.com copy.png" alt="Imagem do Hero">
+            <img src="assets/images/pngwing.com copy.png" alt="Imagem do Hero" loading="lazy">
         </div>
     </div>
     
@@ -56,7 +56,7 @@ heroContent.innerHTML = `
             <button data-action="comprar">Compra já</button>
         </div>
         <div class="hero-image">
-            <img src="assets/images/pngwing.com.png" alt="Imagem do Hero">
+            <img src="assets/images/pngwing.com.png" alt="Imagem do Hero" loading="lazy">
         </div>
     </div>
     `;

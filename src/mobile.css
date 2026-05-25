@@ -38,6 +38,7 @@
 
   aside {
     /* display: none; */
+    height: calc(100vh -60px);
     background: rgba(0, 0, 0, 0.801);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
@@ -46,14 +47,16 @@
     left: -100%;
     bottom: 0;
     z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     transition: left 0.3s ease-in-out;
+    overflow-y: scroll;
     .categoria {
       width: 100%;
     }
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent; /* make scrollbar transparent */
   }
   .container--produtos aside 
 .categoria 
