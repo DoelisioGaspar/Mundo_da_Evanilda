@@ -158,7 +158,7 @@ header .search-bar button i {
 
 .hero {
   padding: 50px 20px;
-  background: radial-gradient(circle, rgb(11, 0, 172),rgb(21, 22, 100), rgb(66, 19, 175));
+  background: radial-gradient(circle, rgb(175, 173, 194),rgb(108, 108, 117), rgb(104, 101, 112));
   background-position: fixed;
   min-height: 100vh;
 }
