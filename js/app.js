@@ -1,5 +1,14 @@
 import { produto } from "./produtos.js";
 
+
+body.onload = function () {
+  const loader = document.querySelector(".loader");
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 2000);
+}
+
+
 const areaProduto = document.querySelector(".area__produtos");
 
 const renderProdutos = (lista) => {
@@ -138,7 +147,6 @@ radio.forEach((r) => {
       //Renderizar apenas os produtos com a categoria selecionada
       produto.then((data) => {
         filtrarProdutos(data, r.value);
-        console.log(r.value);
       });
     }
   });

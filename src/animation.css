@@ -112,6 +112,17 @@
     animation: spin 1s linear infinite;
 }
 
+
+.loader {
+    background: #4570ffd7;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 5px solid #c5c5c5;
+    border-top: 5px solid #727272;
+    animation: spin 1s linear infinite;
+}
+
 @keyframes spin {
     from {
         transform: rotate(0deg);
