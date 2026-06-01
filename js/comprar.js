@@ -3,7 +3,7 @@ import { produto } from './produtos.js';
 
 export default function renderProductSelected(data) {
     const urlParams = new URLSearchParams(window.location.search);
-    const productId = urlParams.get('id');
+    const productId = Number(urlParams.get('id'));
     const productName = urlParams.get('name').split('-').join(' '); // Substitui hífens por espaços
     const selectedProduct = data.find(p =>  p.id === productId);
     
