@@ -47,7 +47,7 @@ produto.then(data => {
     console.error('Error rendering product:', error);
 });
 
-const containerMoreProductsLike = document.queryselector('.container-more-products-like')
+const containerMoreProductsLike = document.querySelector('.container-more-products-like')
 
 const renderProdutos = (lista) => {
   containerMoreProductsLike.innerHTML = lista
@@ -85,3 +85,5 @@ const renderProdutos = (lista) => {
 produto.then((data) => {
   renderProdutos(data);
 });
+
+console.log(containerMoreProductsLike)
