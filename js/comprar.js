@@ -49,10 +49,10 @@ produto.then(data => {
 });
 
 
-/* const containerMoreProductsLike = document.querySelector('.container-more-products-like');
+const containerMoreProductsLike = document.querySelector('.container-more-products-like');
 containerMoreProductsLike.innerHTML = 
     produto.then((data) => 
         {renderProdutos(data)}
     ).catch(error => {
         console.error('Error rendering more products:', error)
-    }); */
+    });
