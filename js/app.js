@@ -2,7 +2,7 @@ import { produto } from "./produtos.js";
 
 const areaProduto = document.querySelector(".area__produtos");
 
-const renderProdutos = (lista) => {
+export const renderProdutos = (lista) => {
   areaProduto.innerHTML = lista
     .map(
       (p) => `
@@ -172,5 +172,3 @@ document.addEventListener("click", (event) => {
   }
 });
 
-
-export { renderProdutos };

@@ -50,4 +50,6 @@ produto.then(data => {
 
 
 const containerMoreProductsLike = document.querySelector('.container-more-products-like');
-containerMoreProductsLike.innerHTML = `${renderProdutos};`
+containerMoreProductsLike.innerHTML = `${produto.then((data) => {
+  renderProdutos(data);
+})};`
