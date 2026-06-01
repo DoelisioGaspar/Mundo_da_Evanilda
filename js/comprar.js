@@ -14,7 +14,7 @@ export default function renderProductSelected(data) {
         <div class="product-details">
             <div class="product-details__image">
                 <img src="${selectedProduct.imagem}" alt="${selectedProduct.nome}">
-                <button id="btn-add" class="btn-add">Adicionar</button>
+                <button id="btn-add" class="btn-add"><span class="fa fa-shopping-cart"></span></button>
             </div>
             <div class="product-details__info">
                 <div class="product-details__info-content">
