@@ -148,7 +148,7 @@ areaProduto.addEventListener("click", (event) => {
   const produtoElement = event.target.closest(".produto");
   if (produtoElement) {
     // Handle product click event
-    window.location.href = `/produto?name=${produtoElement.dataset.name}&id=${produtoElement.dataset.id}`;
+    window.location.href = `/produto?name=${produtoElement.dataset.name} &id=${produtoElement.dataset.id}`;
   }
   else if (event.target.classList.contains("fa-cart-shopping")) {
     const produtoElement = event.target.closest(".produto");
