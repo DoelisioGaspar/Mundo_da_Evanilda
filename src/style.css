@@ -198,8 +198,9 @@ header .search-bar button i {
 }
 
 .hero-image {
-  height: 320px;
-  width: 32vw;
+  max-height: 320px;
+  max-width: 35%;
+  min-width: 250px;
 }
 
 .hero-image img{
