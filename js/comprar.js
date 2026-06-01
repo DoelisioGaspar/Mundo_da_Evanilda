@@ -1,6 +1,6 @@
 /* Puxar um único produto específico para compra*/
 import { produto } from './produtos.js';
-//import { renderProdutos } from './app.js'
+import { renderProdutos } from './app.js';
 
 export default function renderProductSelected(data) {
     const urlParams = new URLSearchParams(window.location.search);

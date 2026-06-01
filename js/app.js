@@ -2,7 +2,7 @@ import { produto } from "./produtos.js";
 
 const areaProduto = document.querySelector(".area__produtos");
 
-export const renderProdutos = (lista) => {
+export default renderProdutos = (lista) => {
   areaProduto.innerHTML = lista
     .map(
       (p) => `
