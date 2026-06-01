@@ -171,3 +171,6 @@ document.addEventListener("click", (event) => {
     });
   }
 });
+
+
+export { renderProdutos };

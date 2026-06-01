@@ -1,6 +1,6 @@
 /* Puxar um único produto específico para compra*/
 import { produto } from './produtos.js';
-
+import { renderProdutos } from './app.js'
 
 export default function renderProductSelected(data) {
     const urlParams = new URLSearchParams(window.location.search);
@@ -47,3 +47,7 @@ produto.then(data => {
 }).catch(error => {
     console.error('Error rendering product:', error);
 });
+
+
+const containerMoreProductsLike = document.querySelector('.container-more-products-like');
+containerMoreProductsLike.innerHTML = `${renderProdutos(data)};`
